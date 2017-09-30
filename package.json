@@ -1,0 +1,26 @@
+{
+  "name": "playground_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lite-server": "lite-server --baseDir='docs'",
+    "test": "npm run lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadadadev/playground_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadadadev/playground_2/issues"
+  },
+  "homepage": "https://github.com/dadadadev/playground_2#readme",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
