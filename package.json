@@ -20,7 +20,5 @@
     "url": "https://github.com/dadadadev/playground_2/issues"
   },
   "homepage": "https://github.com/dadadadev/playground_2#readme",
-  "dependencies": {
-    "lite-server": "^2.3.0"
-  }
+  "dependencies": {}
 }
