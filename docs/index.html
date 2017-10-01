@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SVG sample</title>
+  <link rel="stylesheet" href="normalize.css">
   <style>
     .defs {
       display: none;
     }
-    svg {
-      padding: 40px 0;
-    }
     .topLogo {
+      width: 40%;
       position: relative;
       left: 100px;
+    }
+    body {
+      height: 100vh;
+    }
+
+    .topLogo svg {
+      width: 100px;
+      height: 140px;
+      padding: 20px 0;
+    }
+    @media screen and (max-width: 768px) {
+      .topLogo svg {
+        width: 50px;
+        height: 70px;
+        padding: 10px 0;
+      }
     }
   </style>
 </head>
@@ -141,7 +156,7 @@
     <symbol id="_dot" viewBox="0 0 3 14">
       <circle cx="1.5" cy="9.4" r="1"/>
     </symbol>
-    <symbol id="_4 14" viewBox="0 0 ">
+    <symbol id="_comma" viewBox="0 0 4 14">
       <path d="M2.1,8.8l1.2,0.5l-1.7,3.3l-0.9-0.4L2.1,8.8z"/>
     </symbol>
     <symbol id="_quot" viewBox="0 0 6 14">
@@ -171,22 +186,22 @@
         C12.9,3.9,10.3,1.2,7,1.2z"/>
     </symbol>
   </svg>
-  <div style="width: 50%;" class="topLogo">
-    <svg width="25%"><use xlink:href="#_dot"></use></svg>
-    <svg width="25%"><use xlink:href="#_a"></use></svg>
-    <svg width="25%"><use xlink:href="#_e"></use></svg>
-    <svg width="25%"><use xlink:href="#_n"></use></svg>
-    <svg width="25%"><use xlink:href="#_"></use></svg>
-    <svg width="25%"><use xlink:href="#_"></use></svg>
-    <svg width="25%"><use xlink:href="#_r"></use></svg>
-    <svg width="25%"><use xlink:href="#_s"></use></svg>
-    <svg width="25%"><use xlink:href="#_u"></use></svg>
-    <svg width="25%"><use xlink:href="#_"></use></svg>
-    <svg width="25%"><use xlink:href="#_"></use></svg>
-    <svg width="25%"><use xlink:href="#_v"></use></svg>
-    <svg width="25%"><use xlink:href="#_x"></use></svg>
-    <svg width="25%"><use xlink:href="#_z"></use></svg>
-    <svg width="25%"><use xlink:href="#_dot"></use></svg>
+  <div class="topLogo">
+    <svg><use xlink:href="#_dot"></use></svg>
+    <svg><use xlink:href="#_a"></use></svg>
+    <svg><use xlink:href="#_e"></use></svg>
+    <svg><use xlink:href="#_n"></use></svg>
+    <svg><use xlink:href="#_"></use></svg>
+    <svg><use xlink:href="#_"></use></svg>
+    <svg><use xlink:href="#_r"></use></svg>
+    <svg><use xlink:href="#_s"></use></svg>
+    <svg><use xlink:href="#_u"></use></svg>
+    <svg><use xlink:href="#_"></use></svg>
+    <svg><use xlink:href="#_"></use></svg>
+    <svg><use xlink:href="#_v"></use></svg>
+    <svg><use xlink:href="#_x"></use></svg>
+    <svg><use xlink:href="#_z"></use></svg>
+    <svg><use xlink:href="#_dot"></use></svg>
   </div>
 <!--
   <h1>test</h1>
