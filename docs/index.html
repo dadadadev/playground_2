@@ -7,28 +7,42 @@
   <title>SVG sample</title>
   <link rel="stylesheet" href="normalize.css">
   <style>
-    .defs {
-      display: none;
-    }
-    .topLogo {
-      width: 40%;
-      position: relative;
-      left: 100px;
-    }
     body {
       height: 100vh;
     }
 
+    .defs {
+      display: none;
+    }
+
+    .topLogo {
+      width: 370px;
+      position: relative;
+      left: 100px;
+    }
+
     .topLogo svg {
       width: 100px;
-      height: 140px;
+      height: 120px;
       padding: 20px 0;
     }
+
+    .topLogo .offSet {
+      width: 20px;
+    }
+
     @media screen and (max-width: 768px) {
+      .topLogo {
+        width: 200px;
+        left: 50px;
+      }
       .topLogo svg {
         width: 50px;
-        height: 70px;
+        height: 60px;
         padding: 10px 0;
+      }
+      .topLogo .offSet {
+        width: 10px;
       }
     }
   </style>
@@ -187,21 +201,21 @@
     </symbol>
   </svg>
   <div class="topLogo">
-    <svg><use xlink:href="#_dot"></use></svg>
+    <svg class="offSet"><use xlink:href="#_dot"></use></svg>
     <svg><use xlink:href="#_a"></use></svg>
     <svg><use xlink:href="#_e"></use></svg>
     <svg><use xlink:href="#_n"></use></svg>
-    <svg><use xlink:href="#_"></use></svg>
-    <svg><use xlink:href="#_"></use></svg>
+    <svg class="offSet"><use xlink:href="#_"></use></svg>
+    <svg class="offSet"><use xlink:href="#_"></use></svg>
     <svg><use xlink:href="#_r"></use></svg>
     <svg><use xlink:href="#_s"></use></svg>
     <svg><use xlink:href="#_u"></use></svg>
-    <svg><use xlink:href="#_"></use></svg>
-    <svg><use xlink:href="#_"></use></svg>
+    <svg class="offSet"><use xlink:href="#_"></use></svg>
+    <svg class="offSet"><use xlink:href="#_"></use></svg>
     <svg><use xlink:href="#_v"></use></svg>
     <svg><use xlink:href="#_x"></use></svg>
     <svg><use xlink:href="#_z"></use></svg>
-    <svg><use xlink:href="#_dot"></use></svg>
+    <svg class="offSet"><use xlink:href="#_dot"></use></svg>
   </div>
 <!--
   <h1>test</h1>
