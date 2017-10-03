@@ -50,7 +50,7 @@
     }
     .domainBox {
       width: 223px;
-      position: absolute;
+      position: fixed;
       margin: auto;
       left: 0;
       right: 0;
@@ -58,19 +58,6 @@
     }
 
   </style>
-  <script>
-  var currentWidth = window.innerWidth;
-  window.addEventListener("resize", function() {
-  if (currentWidth == window.innerWidth) {
-      // ウインドウ横幅が変わっていないため処理をキャンセル。
-      return;
-  }
-  // ウインドウ横幅が変わったのでリサイズと見なす。
-  // 横幅を更新
-  currentWidth = window.innerWidth;
-  alert("ウインドウがリサイズしました。");
-  });
-  </script>
 </head>
 <body>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="defs">
